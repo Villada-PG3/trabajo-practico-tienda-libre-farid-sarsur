@@ -12,6 +12,7 @@ class Categoria(models.Model):
 
     def __str__(self):
         return self.nombre
+        
 class Producto(models.Model):
     categoria = models.ForeignKey(
         Categoria,
